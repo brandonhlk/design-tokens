@@ -18,9 +18,15 @@
       "20": { "value": "#bbdefb" },
     },
     "red": {
+      "90": { "value": "#b71c1c" },
+      "80": { "value": "#c62828" },
+      "70": { "value": "#d32f2f" },
+      "60": { "value": "#e53935" },
+      "50": { "value": "#ef5350" },
       "40": { "value": "#d32f2f" },
       "30": { "value": "#e57373" },
       "20": { "value": "#ffcdd2" },
+      "10": { "value": "#ffebee" },
     },
     "grey": {
       "10": { "value": "#f5f5f5" },
@@ -61,13 +67,54 @@
         "color": { "value": "{palette.grey.50}" },
       },
     },
+    "danger": {
+      "color": { "value": "{palette.red.90}" },
+      "background": { "value": "{palette.red.50}" },
+      "&:hover": {
+        "background": { "value": "{palette.red.10}" },
+        "color": { "value": "{palette.red.30}" },
+      },
+      "&:disabled": {
+        "color": { "value": "{palette.red.50}" },
+      },
+    },
   },
-  // ts.sem.colour.primary.main
-  "ts": {
+  "cc": {
+    "ref": {
+      "palette": {
+        "type": "palette",
+        "cyan": {
+          "40": { "value": "#00DCFF" },
+          "30": { "value": "#3FE9FF" },
+          "20": { "value": "#83F3FF" },
+        },
+        "grey": {
+          "00": { "value": "#FDFDFD" },
+          "40": { "value": "#A3A3A3" },
+          "35": { "value": "#B0B0B0" },
+          "30": { "value": "#C2C2C2" },
+          "70": { "value": "#525252" },
+          "100": { "value": "#121212" },
+        },
+        "violet": {
+          "10": { "value": "#EAB8FF" },
+          "20": { "value": "#D09CFF" },
+          "30": { "value": "#B77FFF" },
+          "40": { "value": "#7F00FF" },
+        },
+      },
+    },
     "sem": {
       "colour": {
-        "primary": {
-          "main": { "value": "{palette.blue.40}" },
+        "action": {
+          "primary": { "value": "{cc.ref.palette.cyan.40}" },
+          "primary-hovered": { "value": "{cc.ref.palette.cyan.30}" },
+          "primary-pressed": { "value": "{cc.ref.palette.cyan.20}" },
+          "disabled": { "value": "{cc.ref.palette.grey.00}" },
+        },
+        "text": {
+          "inverse": { "value": "{cc.ref.palette.grey.100}" },
+          "disabled": { "value": "{cc.ref.palette.grey.70}" },
         },
       },
     },

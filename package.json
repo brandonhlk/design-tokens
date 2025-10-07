@@ -20,6 +20,14 @@
       "types": "./dist/theme/customThemes.d.ts",
       "import": "./dist/theme/customThemes.js",
       "require": "./dist/theme/customThemes.js"
+    },
+    "./styleOverrides": {
+      "types": "./dist/theme/styleOverrides.d.ts",
+      "import": "./dist/theme/styleOverrides.js",
+      "require": "./dist/theme/styleOverrides.js"
+    },
+    "./mui-component-override": {
+      "types": "./dist/theme/mui-component-override.d.ts"
     }
   },
   "main": "dist/theme/tokens.js",
@@ -34,5 +42,8 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "@mui/material": "^7.3.4"
   }
 }

@@ -22,9 +22,15 @@ export const tokens = {
       '40': '#1976d2',
     },
     red: {
+      '10': '#ffebee',
       '20': '#ffcdd2',
       '30': '#e57373',
       '40': '#d32f2f',
+      '50': '#ef5350',
+      '60': '#e53935',
+      '70': '#d32f2f',
+      '80': '#c62828',
+      '90': '#b71c1c',
     },
     grey: {
       '10': '#f5f5f5',
@@ -62,12 +68,53 @@ export const tokens = {
         color: '#9e9e9e',
       },
     },
+    danger: {
+      color: '#b71c1c',
+      background: '#ef5350',
+      '&:hover': {
+        background: '#ffebee',
+        color: '#e57373',
+      },
+      '&:disabled': {
+        color: '#ef5350',
+      },
+    },
   },
-  ts: {
+  cc: {
+    ref: {
+      palette: {
+        cyan: {
+          '20': '#83F3FF',
+          '30': '#3FE9FF',
+          '40': '#00DCFF',
+        },
+        grey: {
+          '30': '#C2C2C2',
+          '35': '#B0B0B0',
+          '40': '#A3A3A3',
+          '70': '#525252',
+          '100': '#121212',
+          '00': '#FDFDFD',
+        },
+        violet: {
+          '10': '#EAB8FF',
+          '20': '#D09CFF',
+          '30': '#B77FFF',
+          '40': '#7F00FF',
+        },
+      },
+    },
     sem: {
       colour: {
-        primary: {
-          main: '#1976d2',
+        action: {
+          primary: '#00DCFF',
+          'primary-hovered': '#3FE9FF',
+          'primary-pressed': '#83F3FF',
+          disabled: '#FDFDFD',
+        },
+        text: {
+          inverse: '#121212',
+          disabled: '#525252',
         },
       },
     },
