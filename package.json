@@ -27,12 +27,12 @@
       "require": "./dist/theme/styleOverrides.js"
     },
     "./mui-component-override": {
-      "types": "./dist/theme/mui-component-override.d.ts"
+      "types": "./dist/types/mui-component-override.d.ts"
     }
   },
-  "main": "dist/theme/tokens.js",
-  "module": "dist/theme/tokens.js",
-  "types": "dist/theme/tokens.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "eslint": "^9.33.0",
@@ -45,5 +45,9 @@
   },
   "dependencies": {
     "@mui/material": "^7.3.4"
-  }
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ]
 }

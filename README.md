@@ -106,6 +106,24 @@ Material UI components are customized using the generated design tokens via the 
 
 Using `ThemeOptions` allows us to control the styles of your components globally, instead of having developers going into each component to manually override the styles of the component. This approach allows you to update your design tokens and have those changes automatically reflected throughout your Material UI components, ensuring a consistent and maintainable design system.
 
+## Style Types Override
+
+A new types file `mui-component-override.d.ts` is added into the build which other projects can import to extend the types of MUI components. For example, the "violet" color does not exist in `Button`, but you can declare it like this:
+
+```ts
+declare module '@mui/material/Button' {
+  interface ButtonPropsColorOverrides {
+    violet: true;
+  }
+}
+```
+
+In the other projects that are importing this `design-tokens` package, they will need to create a new types file (e.g. `mui-override.d.ts`) with the following import:
+
+```ts
+import 'design-tokens/mui-component-override';
+```
+
 ## References
 
 - [Material UI Theming](https://mui.com/material-ui/customization/theming/)
