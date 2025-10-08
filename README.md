@@ -6,6 +6,7 @@
 - [Getting Started](#getting-started)
 - [Interaction Overview](#interaction-overview)
 - [Material UI Theme Integration](#material-ui-theme-integration)
+- [Style Types Override](#style-types-override)
 - [References](#references)
 
 ## Introduction
@@ -129,3 +130,4 @@ import 'design-tokens/mui-component-override';
 - [Material UI Theming](https://mui.com/material-ui/customization/theming/)
 - [Style Dictionary](https://styledictionary.com/getting-started/installation/)
 - [Awesome Design Tokens](https://github.com/sturobson/Awesome-Design-Tokens)
+- [Module Augmentation](https://www.digitalocean.com/community/tutorials/typescript-module-augmentation)
